@@ -18,6 +18,5 @@ COPY server.properties $MCSERVERFOLDER/server.properties
 COPY whitelist.json $MCSERVERFOLDER/whitelist.json
 COPY startup.sh /srv/bedrockserver/
 
-RUN echo ${WORLD}
 RUN chmod +x /srv/bedrockserver/startup.sh
 ENTRYPOINT ["/srv/bedrockserver/startup.sh"]
