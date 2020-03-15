@@ -3,6 +3,7 @@ FROM ubuntu
 #Set ENV and ARG
 ENV MCSERVERFOLDER=/srv/bedrockserver
 ARG WORLD=${WORLD}
+ARG PORT=${PORT}
 ARG INSTALLERURL=https://minecraft.azureedge.net/bin-linux/bedrock-server-1.14.32.1.zip
 
 #Install Dependencies
