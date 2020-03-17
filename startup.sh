@@ -130,11 +130,11 @@ if [ -z "$PERMISSIONSJSON" ]
 then
       echo Not Setting Permissions
 else
-      truncate -s 0 "${MCSERVERFOLDER}/worlds/permissions.json"
-      echo "$PERMISSIONSJSON" > "${MCSERVERFOLDER}/worlds/permissions.json"
+      truncate -s 0 "${MCSERVERFOLDER}/permissions.json"
+      echo "$PERMISSIONSJSON" > "${MCSERVERFOLDER}/permissions.json"
 fi
 
-echo "$(cat /srv/bedrockserver/worlds/permissions.json)"
+echo "$(cat /srv/bedrockserver/permissions.json)"
 
 mkdir -p -- "${MCSERVERFOLDER}/worlds/default"
 cd /${MCSERVERFOLDER}/
