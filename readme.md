@@ -83,7 +83,7 @@ You can add more environment variables(env) not just limited to command envs bel
 docker run --name bedrockengine -e SERVERNAME='My Server' \
 -e GAMEMODE='creative' \
 -e SERVER_PORT='19132' \
--p 19132:19132 \
+-p 19132:19132/udp \
 electricreality/bedrockengine
 ```
 OR clone this repository and build it yourself
@@ -93,7 +93,23 @@ To run the server with persistent data, use this command:
 docker run --name bedrockengine -e SERVERNAME='My Server' \
 -e GAMEMODE='creative' \
 -e SERVER_PORT='19132' \
--p 19132:19132 \
+-p 19132:19132/udp \
 -v BedrockEngine:/srv/bedrockserver/worlds
+electricreality/bedrockengine
+```
+
+### Adding Permissions or Whitlist to *docker run*
+I use a PAAS for this such as *caprover* but in this scenario we will use docker cli.
+
+Convert the JSON to a one liner, you can use this tool: https://tools.knowledgewalls.com/online-multiline-to-single-line-converter
+
+Replace JSON HERE with the one liner json. Replace also other values you need.
+```
+docker run --name bed -e SERVERNAME='My Server' \
+-e GAMEMODE='creative' \
+-e SERVER_PORT='25555' \
+-e PERMISSIONSJSON='JSON HERE' \
+-e WHITELISTJSON='JSON HERE' \
+-p 25555:25555/udp \
 electricreality/bedrockengine
 ```
