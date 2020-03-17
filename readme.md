@@ -62,7 +62,8 @@ WHITE_LIST must be set to TRUE for this to work.
 | ignoresPlayerLimit | Boolean | True if this user should not count towards the maximum player limit. Currently there's another soft limit of 30 (or 1 higher than the specified number of max players) connected players, even if players use this option. The intention for this is to have some players be able to join even if the server is full. |
 
 ### Example
-```[
+```
+[
     {
         "ignoresPlayerLimit": false,
         "name": "MyPlayer"
@@ -72,7 +73,8 @@ WHITE_LIST must be set to TRUE for this to work.
         "name": "AnotherPlayer",
         "xuid": "274817248"
     }
-]```
+]
+```
 
 ### Installation
 To be followed.
