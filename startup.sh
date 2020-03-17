@@ -3,6 +3,7 @@ if [ -z "$SERVER_NAME" ]
 then
       echo "\$SERVER_NAME is empty"
 else
+      echo $SERVER_NAME
       echo "\$SERVER_NAME is NOT empty"
 fi
 
