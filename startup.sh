@@ -126,12 +126,12 @@ else
       sed -i -e "s/texturepack-required=/texturepack-required=${TEXTUREPACK_REQUIRED}/g" "${MCSERVERFOLDER}/server.properties"
 fi
 
-if [ -z "$WHITELIST" ]
+if [ -z "$PERMISSIONSJSON" ]
 then
-      echo Not Setting Whitelist
+      echo Not Setting Permissions
 else
-      truncate -s 0 "${MCSERVERFOLDER}/whitelist.json"
-      echo "$WHITELIST" > "${MCSERVERFOLDER}/whitelist.json"
+      truncate -s 0 "${MCSERVERFOLDER}/permissions.json"
+      echo "$WHITELIST" > "${MCSERVERFOLDER}/permissions.json"
 fi
 
 echo "$(cat /srv/bedrockserver/server.properties)"

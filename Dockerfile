@@ -12,7 +12,7 @@ RUN unzip mc.zip -d $MCSERVERFOLDER
 RUN rm mc.zip
 
 # Move in files
-COPY default.permissions.json $MCSERVERFOLDER/worlds/default.permissions.json
+COPY permissions.json $MCSERVERFOLDER/worlds/permissions.json
 COPY server.properties $MCSERVERFOLDER/server.properties
 COPY whitelist.json $MCSERVERFOLDER/whitelist.json
 COPY startup.sh /srv/bedrockserver/
