@@ -134,7 +134,13 @@ else
       echo "$PERMISSIONSJSON" > "${MCSERVERFOLDER}/permissions.json"
 fi
 
-echo "$(cat /srv/bedrockserver/permissions.json)"
+if [ -z "$WHITELISTJSON" ]
+then
+      echo Not Setting Whitelist Users
+else
+      truncate -s 0 "${MCSERVERFOLDER}/whitelist.json"
+      echo "$WHITELISTJSON" > "${MCSERVERFOLDER}/whitelist.json"
+fi
 
 mkdir -p -- "${MCSERVERFOLDER}/worlds/default"
 cd /${MCSERVERFOLDER}/
