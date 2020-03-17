@@ -77,6 +77,7 @@ WHITE_LIST must be set to TRUE for this to work.
 ```
 
 ## Installation
+You can add more environment variables(env) not just limited to command envs below.
 ```
 docker run --name bedrockengine -e SERVERNAME='My Server' \
 -e GAMEMODE='creative' \
