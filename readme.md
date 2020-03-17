@@ -77,5 +77,11 @@ WHITE_LIST must be set to TRUE for this to work.
 ```
 
 ## Installation
-To be followed.
+```
+docker run --name bedrockengine -e SERVERNAME='My Server' \
+-e GAMEMODE='creative' \
+-e SERVER_PORT='19132' \
+-p 19132:19132 \
+electricreality/bedrockengine
+```
 or just build the image yourself. Clone this repo and build image
