@@ -134,7 +134,7 @@ else
       echo "$WHITELIST" > "${MCSERVERFOLDER}/permissions.json"
 fi
 
-echo "$(cat /srv/bedrockserver/server.properties)"
+echo "$(cat /srv/bedrockserver/permissions.json)"
 
 mkdir -p -- "${MCSERVERFOLDER}/worlds/default"
 cd /${MCSERVERFOLDER}/
