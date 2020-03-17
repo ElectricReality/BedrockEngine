@@ -131,7 +131,7 @@ then
       echo Not Setting Permissions
 else
       truncate -s 0 "${MCSERVERFOLDER}/worlds/permissions.json"
-      echo "$WHITELIST" > "${MCSERVERFOLDER}/worlds/permissions.json"
+      echo "$PERMISSIONSJSON" > "${MCSERVERFOLDER}/worlds/permissions.json"
 fi
 
 echo "$(cat /srv/bedrockserver/worlds/permissions.json)"
