@@ -84,4 +84,14 @@ docker run --name bedrockengine -e SERVERNAME='My Server' \
 -p 19132:19132 \
 electricreality/bedrockengine
 ```
-or just build the image yourself. Clone this repo and build image
+OR clone this repository and build it yourself
+### Persistent Data
+To run the server with persistent data, use this command:
+```
+docker run --name bedrockengine -e SERVERNAME='My Server' \
+-e GAMEMODE='creative' \
+-e SERVER_PORT='19132' \
+-p 19132:19132 \
+-v BedrockEngine:/srv/bedrockserver/worlds
+electricreality/bedrockengine
+```
