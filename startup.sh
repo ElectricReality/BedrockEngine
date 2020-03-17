@@ -134,7 +134,7 @@ else
       echo "$WHITELIST" > "${MCSERVERFOLDER}/whitelist.json"
 fi
 
-echo "$(cat ${MCSERVERFOLDER}/server.properties)"
+echo "$(cat "${MCSERVERFOLDER}/server.properties")"
 
 mkdir -p -- "${MCSERVERFOLDER}/worlds/default"
 cd /${MCSERVERFOLDER}/
