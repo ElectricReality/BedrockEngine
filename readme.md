@@ -1,5 +1,5 @@
 # Bedrock Engine
-A Minecraft Bedrock server that you only need to set Environment Variables. Uses Docker.
+A Minecraft Bedrock server that you only need to set Environment Variables for server.properties, permissions.json and whitelist.json. Uses Docker.
 
 ## Environment Variables
 Taken from http://192.95.46.1/jar/bedrock/bedrock_server_how_to.html
@@ -76,6 +76,6 @@ WHITE_LIST must be set to TRUE for this to work.
 ]
 ```
 
-### Installation
+## Installation
 To be followed.
 or just build the image yourself. Clone this repo and build image
