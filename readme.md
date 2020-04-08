@@ -80,7 +80,7 @@ WHITE_LIST must be set to TRUE for this to work.
 ## Installation
 You can add more environment variables(env) not just limited to command envs below.
 ```
-docker run --name bedrockengine -e SERVERNAME='My Server' \
+docker run --name bedrockengine -d -e SERVERNAME='My Server' \
 -e GAMEMODE='creative' \
 -e SERVER_PORT='19132' \
 -p 19132:19132/udp \
@@ -90,7 +90,7 @@ OR clone this repository and build it yourself
 ### Persistent Data
 To run the server with persistent data, use this command:
 ```
-docker run --name bedrockengine -e SERVERNAME='My Server' \
+docker run --name bedrockengine -d -e SERVERNAME='My Server' \
 -e GAMEMODE='creative' \
 -e SERVER_PORT='19132' \
 -p 19132:19132/udp \
@@ -105,7 +105,7 @@ Convert the JSON to a one liner, you can use this tool: https://tools.knowledgew
 
 Replace JSON HERE with the one liner json. Replace also other values you need.
 ```
-docker run --name bed -e SERVERNAME='My Server' \
+docker run --name bedrockengine -d -e SERVERNAME='My Server' \
 -e GAMEMODE='creative' \
 -e SERVER_PORT='25555' \
 -e PERMISSIONSJSON='JSON HERE' \
