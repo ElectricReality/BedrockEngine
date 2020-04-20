@@ -2,7 +2,7 @@ FROM ubuntu
 
 #Set ENV and ARG
 ENV MCSERVERFOLDER=/srv/bedrockserver
-ARG INSTALLERURL=https://minecraft.azureedge.net/bin-linux/bedrock-server-1.14.32.1.zip
+ARG INSTALLERURL=https://minecraft.azureedge.net/bin-linux/bedrock-server-1.14.60.5.zip
 
 #Install Dependencies
 RUN apt-get update
